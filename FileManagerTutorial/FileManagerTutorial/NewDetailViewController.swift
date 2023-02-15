@@ -11,10 +11,12 @@ class NewDetailViewController: UIViewController {
 
     @IBOutlet var imagrView: UIImageView!
     var selectedImage = ""
+    var totalNumber = 0
+    var selectedIndex = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "This image is \(selectedImage)"
+        title = "Picture \(selectedIndex + 1) of \(totalNumber)"
         navigationItem.largeTitleDisplayMode = .never
         imagrView.image = UIImage(named: selectedImage)
     }
