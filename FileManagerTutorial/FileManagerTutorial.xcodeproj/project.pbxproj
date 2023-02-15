@@ -24,6 +24,8 @@
 		365CF502299A779000DEF071 /* nssl0033.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 365CF4F8299A779000DEF071 /* nssl0033.jpg */; };
 		365CF503299A779000DEF071 /* nssl0034.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 365CF4F9299A779000DEF071 /* nssl0034.jpg */; };
 		365CF505299AB94500DEF071 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365CF504299AB94500DEF071 /* DetailViewController.swift */; };
+		365CF509299D4B3D00DEF071 /* NewDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365CF507299D4B3D00DEF071 /* NewDetailViewController.swift */; };
+		365CF50A299D4B3D00DEF071 /* NewDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 365CF508299D4B3D00DEF071 /* NewDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		365CF4F9299A779000DEF071 /* nssl0034.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0034.jpg; sourceTree = "<group>"; };
 		365CF504299AB94500DEF071 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		365CF506299BB5AA00DEF071 /* Tasks .md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Tasks .md"; sourceTree = "<group>"; };
+		365CF507299D4B3D00DEF071 /* NewDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDetailViewController.swift; sourceTree = "<group>"; };
+		365CF508299D4B3D00DEF071 /* NewDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,8 @@
 				365CF4E9299A777200DEF071 /* Info.plist */,
 				365CF4EF299A779000DEF071 /* Content */,
 				365CF506299BB5AA00DEF071 /* Tasks .md */,
+				365CF507299D4B3D00DEF071 /* NewDetailViewController.swift */,
+				365CF508299D4B3D00DEF071 /* NewDetailViewController.xib */,
 			);
 			path = FileManagerTutorial;
 			sourceTree = "<group>";
@@ -168,6 +174,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				365CF50A299D4B3D00DEF071 /* NewDetailViewController.xib in Resources */,
 				365CF4FB299A779000DEF071 /* nssl0046.jpg in Resources */,
 				365CF502299A779000DEF071 /* nssl0033.jpg in Resources */,
 				365CF4FE299A779000DEF071 /* nssl0051.jpg in Resources */,
@@ -194,6 +201,7 @@
 				365CF4E0299A777100DEF071 /* ViewController.swift in Sources */,
 				365CF4DC299A777100DEF071 /* AppDelegate.swift in Sources */,
 				365CF4DE299A777100DEF071 /* SceneDelegate.swift in Sources */,
+				365CF509299D4B3D00DEF071 /* NewDetailViewController.swift in Sources */,
 				365CF505299AB94500DEF071 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

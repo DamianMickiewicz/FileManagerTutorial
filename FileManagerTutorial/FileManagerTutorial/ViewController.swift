@@ -30,7 +30,8 @@ class ViewController: UITableViewController {
                 pictures.append(item)
             }
         }
-        
+        pictures.sort()
+        pictures = pictures.filter { $0.contains("4") }
         print(pictures)
     }
     
@@ -45,10 +46,13 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
-            vc.selectedImage = pictures[indexPath.row]
-            navigationController?.pushViewController(vc, animated: true)
-        }
+//        if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
+//            vc.selectedImage = pictures[indexPath.row]
+//            navigationController?.pushViewController(vc, animated: true)
+//        }
+        let vc = NewDetailViewController()
+        vc.selectedImage = pictures[indexPath.row]
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 

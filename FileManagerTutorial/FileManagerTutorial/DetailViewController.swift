@@ -8,18 +8,21 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    
     @IBOutlet var imageView: UIImageView!
-    var selectedImage: String?
+    
+    var selectedImage: String = ""
+    var selectedPictureNumber = 0
+    var totalPictures = 0
+    var pictures = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = selectedImage
+        title = "This image is \(selectedImage)"
         navigationItem.largeTitleDisplayMode = .never
-
-        if let imageToLoad = selectedImage {
-            imageView.image = UIImage(named: imageToLoad)
-        }
+        
+        imageView.image = UIImage(named: selectedImage)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -30,6 +33,13 @@ class DetailViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.hidesBarsOnTap = false
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
+            vc.selectedImage = pictures[indexPath.row]
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
 
     /*
